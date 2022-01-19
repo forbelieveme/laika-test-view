@@ -2,6 +2,9 @@
   <div class="container">
     <footer class="py-5">
       <div class="row">
+        <!-- *********************** -->
+        <!-- Hidden in small screens -->
+        <!-- *********************** -->
         <div class="col-12 d-none d-sm-block">
           <h5>Section</h5>
           <ul class="nav flex-column">
@@ -64,6 +67,71 @@
             </li>
           </ul>
         </div>
+
+        <!-- *********************** -->
+        <!-- Hidden in small screens -->
+        <!-- *********************** -->
+
+        <!-- *********************** -->
+        <!-- Hidden in large screens -->
+        <!-- *********************** -->
+        <div class="col">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown button 1
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown button 2
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Dropdown button 3
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- *********************** -->
+        <!-- Hidden in large screens -->
+        <!-- *********************** -->
 
         <div class="col-12">
           <form>
