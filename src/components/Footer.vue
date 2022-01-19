@@ -153,29 +153,59 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-between py-4 my-4 border-top">
-        <p>© 2021 Company, Inc. All rights reserved.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="link-dark" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#twitter"></use></svg
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#instagram"></use></svg
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" href="#"
-              ><svg class="bi" width="24" height="24">
-                <use xlink:href="#facebook"></use></svg
-            ></a>
-          </li>
-        </ul>
+      <!-- *********************** -->
+      <!-- Partners logos -->
+      <!-- *********************** -->
+      <div id="footer-convenios" class="col-12 mt-5">
+        <div class="row">
+          <div class="col-auto">
+            <img
+              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
+              alt=""
+            />
+          </div>
+          <div class="col-auto">
+            <img
+              src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
+
+      <!-- *********************** -->
+      <!-- Partners logos -->
+      <!-- *********************** -->
     </footer>
   </div>
 </template>
@@ -188,3 +218,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#footer-convenios img {
+  width: 90px;
+}
+</style>
