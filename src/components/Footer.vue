@@ -68,13 +68,14 @@
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <h6 class="card-title">Card subtitle</h6>
-        <div class="mb-3">
+        <div class="form-floating mb-3">
           <input
             type="email"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="floatingInput"
             placeholder="name@example.com"
           />
+          <label for="floatingInput">Email address</label>
         </div>
       </div>
     </div>
