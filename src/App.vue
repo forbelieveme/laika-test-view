@@ -1,7 +1,7 @@
 <template>
   <Header title="HW"></Header>
   <Carousel></Carousel>
-  <Categories></Categories>
+  <Categories :categories="categories"></Categories>
   <Footer></Footer>
 </template>
 
@@ -18,6 +18,50 @@ export default {
     Footer,
     Carousel,
     Categories,
+  },
+  data() {
+    return {
+      categories: [],
+    };
+  },
+  created() {
+    this.categories = [
+      {
+        id: 1,
+        title: "Alimento",
+        url: "#",
+      },
+      {
+        id: 2,
+        title: "Snacks",
+        url: "#",
+      },
+      {
+        id: 3,
+        title: "Farmapet",
+        url: "#",
+      },
+      {
+        id: 4,
+        title: "Cuidado e Higiene",
+        url: "#",
+      },
+      {
+        id: 5,
+        title: "Juguetes",
+        url: "#",
+      },
+      {
+        id: 6,
+        title: "Accesorios",
+        url: "#",
+      },
+      {
+        id: 7,
+        title: "Para PetLovers",
+        url: "#",
+      },
+    ];
   },
 };
 </script>
