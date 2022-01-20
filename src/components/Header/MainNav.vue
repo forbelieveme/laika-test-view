@@ -1,74 +1,53 @@
 <template>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img
-            src="/docs/5.1/assets/brand/bootstrap-logo.svg"
-            alt=""
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-          Bootstrap
-        </a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg_purple">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://laika.com.co/assets/home/LaikaMascotas.svg"
+          alt=""
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+      </a>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-        </div>
-        <form class="d-flex">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button id="s-circle" class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
+      <div
+        class="
+          input-group
+          col-12 col-md-12 col-lg-12
+          offset-xl-1
+          col-xl-7
+          p-0 p-0
+        "
+      >
+        <input
+          type="text"
+          class="autocomplete_search_style placeholder form-control"
+          name="autocomplete_search"
+          id="autocomplete_search"
+          placeholder="¿Qué necesita tu mascota?"
+        />
+        <img
+          src="https://laika.com.co/assets/home/search_icon_mc.svg"
+          id="btn_result_search"
+          alt=""
+          class="icon_search"
+          style="visibility: visible"
+        />
       </div>
-    </nav>
+    </div>
+  </nav>
 </template>
 
 <script>
@@ -76,3 +55,29 @@ export default {
   name: "MainNav",
 };
 </script>
+
+<style scoped>
+.icon_search {
+  right: 0;
+}
+
+.icon_close_searcher,
+.icon_search {
+  padding: 7px 10px;
+  z-index: 10;
+  cursor: pointer;
+  color: #614186;
+  position: absolute;
+}
+
+.autocomplete_search_style {
+  /* padding-left: 45px !important; */
+  border: 0 solid #ced4da !important;
+  border-radius: 8px !important;
+  z-index: 2;
+}
+
+.bg_purple {
+  background-color: #603e85 !important;
+}
+</style>
