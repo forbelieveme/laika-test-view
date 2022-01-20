@@ -1,72 +1,21 @@
 <template>
-  <div class="container">
-    <h1>Categoria</h1>
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-          <button type="button" class="btn btn-outline-secondary">
-            Secondary
-          </button>
-        </div>
-      </div>
+  <div class="row">
+    <div :key="categorie.id" v-for="categorie in categories" class="col-12 col-lg-3">
+      <Categorie :categorie="categorie" class="col"></Categorie>
     </div>
   </div>
 </template>
 
 <script>
+import Categorie from "./Categorie.vue";
+
 export default {
   name: "Categories",
   props: {
     categories: Array,
+  },
+  components: {
+    Categorie,
   },
 };
 </script>
