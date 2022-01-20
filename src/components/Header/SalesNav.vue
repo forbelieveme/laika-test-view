@@ -1,50 +1,69 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+  <div
+    class="
+      d-xs-flex d-sm-none d-md-none d-xl-none
+      col-12
+      row
+      mx-auto
+      py-2
+      bg-white
+      justify-content-center
+    "
+  >
+    <a href="#" class="col-4 offset-2">
+      <div
+        class=""
+        style="cursor: pointer; background: #603e85; color: #fff"
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown link
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
+        <span class="ml-2" style="background: #603e85; color: #fff">
+          Perro
+        </span>
+        <span class="text-left text-white mr-1 ml-1">
+          <img
+            width="30"
+            src="https://laika.com.co/assets/home/dog_mc.svg "
+            alt="Colombia "
+          />
+        </span>
+      </div>
+    </a>
+    <a href="#" class="col-4">
+      <div class=" ml-2" style="cursor: pointer">
+        <span class="ml-2" style=""> Gato </span>
+        <span class="text-left text-white mr-1 ml-1">
+          <img
+            width="30"
+            class="no_decoration_links"
+            src="https://laika.com.co/assets/home/cat_mc_s.svg "
+            alt="Colombia "
+          />
+        </span>
+      </div>
+    </a>
+    <div
+      id="header_pets_dog_cat_resp"
+      class="
+        px-0
+        d-sm-flex d-xl-none
+        row
+        col-12
+        mx-auto
+        py-2
+        bg-white
+        justify-content-center
+      "
+    >
+      <div>
+        <input type="hidden" id="clevertap_membership" />
+        <img
+          data-src=" https://lkdev-webcol.laika.com.co/assets/laika_vetcare/membership_logo.png "
+          src=" https://lkdev-webcol.laika.com.co/assets/laika_vetcare/membership_logo.png "
+          class="cursor_pointer lazy br-8 mx-2"
+          style=""
+        />
       </div>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script>
@@ -52,3 +71,7 @@ export default {
   name: "SalesNav",
 };
 </script>
+
+<style scoped>
+
+</style>
