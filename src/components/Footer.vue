@@ -70,8 +70,12 @@
       <!-- *********************** -->
       <!-- Hidden in small screens -->
       <!-- *********************** -->
-
-      <Accordion class="d-block d-sm-none"/>
+      <!-- TODO -->
+      <!-- Insertar un arreglo con la informacion  -->
+      <!-- de los elementos del acordeon -->
+      <Accordion />
+      <Accordion />
+      <Accordion />
 
       <div class="col-12">
         <form>
