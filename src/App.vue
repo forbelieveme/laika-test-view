@@ -1,6 +1,6 @@
 <template>
   <Header title="HW"></Header>
-  <Carousel></Carousel>
+  <Carousel :slides="slides"></Carousel>
   <Categories :categories="categories"></Categories>
   <Footer></Footer>
 </template>
@@ -50,16 +50,6 @@ export default {
       {
         id: 5,
         url: "https://laikapp.s3.amazonaws.com/dev_images_banners/1641408181beneficios-Light-pg-Mailing-650x800.jpg",
-        href: "",
-      },
-      {
-        id: 6,
-        url: "https://laikapp.s3.amazonaws.com/dev_images_banners/1637193899campa%C3%B1as%20nuevas%20diferenciales%20Camilo_Mesa%20de%20trabajo%201%20copia%2020%20copy%202.png",
-        href: "",
-      },
-      {
-        id: 7,
-        url: "https://laikapp.s3.amazonaws.com/dev_images_banners/1642779740Mesa%20de%20trabajo%201%20copia%20104%20%281%29.png",
         href: "",
       },
     ]),
