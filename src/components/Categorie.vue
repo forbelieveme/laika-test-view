@@ -4,7 +4,7 @@
   <div class="">
     <a
       :href="categorie.url"
-      class="btn btn-categorie tn-lg col-11 mx-2 my-1"
+      class="btn btn-categorie tn-lg col-11 mx-2 my-1 shadow-sm"
       tabindex="-1"
       role="button"
       aria-disabled="true"
@@ -24,6 +24,6 @@ export default {
 .btn-categorie {
     color: #603e85;
     background-color: #fff;
-    border-color: #603e85;
+    border-color: rgba(116, 116, 116, 0.1);
 }
 </style>
