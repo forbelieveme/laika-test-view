@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    <footer class="py-5">
+    <footer class="pt-5">
       <div class="row">
         <!-- *********************** -->
         <!-- Hidden in small screens -->
@@ -158,12 +157,10 @@
       <!-- *********************** -->
 
       <Partners :partners="partners"/>
-
       <!-- *********************** -->
       <!-- Partners logos -->
       <!-- *********************** -->
     </footer>
-  </div>
 </template>
 
 <script>
@@ -181,7 +178,5 @@ export default {
 </script>
 
 <style scoped>
-#footer-convenios img {
-  width: 90px;
-}
+
 </style>
