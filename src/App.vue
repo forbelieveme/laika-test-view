@@ -2,7 +2,7 @@
   <Header title="HW"></Header>
   <Carousel :slides="slides"></Carousel>
   <Categories :categories="categories"></Categories>
-  <Footer></Footer>
+  <Footer :partners="partners"></Footer>
 </template>
 
 <script>
@@ -102,37 +102,44 @@ export default {
         {
           id: 1,
           href: "#",
-          url: "",
+          name:"american",
+          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/601px-American_Express_logo_%282018%29.svg.png",
         },
         {
           id: 2,
           href: "#",
-          url: "",
+          name:"visa",
+          url: "https://cdn.visa.com/v2/assets/images/logos/visa/blue/logo.png",
         },
         {
           id: 3,
           href: "#",
-          url: "",
+          name:"mastercard",
+          url: "https://brand.mastercard.com/content/dam/mccom/brandcenter/thumbnails/mastercard_circles_92px_2x.png",
         },
         {
           id: 4,
           href: "#",
-          url: "",
+          name:"mercadopago",
+          url: "https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large@2x.png",
         },
         {
           id: 5,
           href: "#",
-          url: "",
+          name:"huawieApp",
+          url: "https://laika.com.co/assets/huaweiGallery.png",
         },
         {
           id: 6,
           href: "#",
-          url: "",
+          name:"googleApp",
+          url: "https://laika.com.co/assets/GOOGLEP.png",
         },
         {
           id: 7,
           href: "#",
-          url: "",
+          name:"appStore",
+          url: "https://laika.com.co/assets/APP.png",
         },
       ]);
   },
