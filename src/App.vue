@@ -30,27 +30,27 @@ export default {
       {
         id: 1,
         url: "https://laikapp.s3.amazonaws.com/dev_images_banners/1637193899campa%C3%B1as%20nuevas%20diferenciales%20Camilo_Mesa%20de%20trabajo%201%20copia%2020%20copy%202.png",
-        href: "",
+        href: "#",
       },
       {
         id: 2,
         url: "https://laikapp.s3.amazonaws.com/dev_images_banners/1642779740Mesa%20de%20trabajo%201%20copia%20104%20%281%29.png",
-        href: "",
+        href: "#",
       },
       {
         id: 3,
         url: "https://laikapp.s3.amazonaws.com/dev_images_banners/1642779226Dog-Days-con-tyc-l.png",
-        href: "",
+        href: "#",
       },
       {
         id: 4,
         url: "https://laikapp.s3.amazonaws.com/dev_images_banners/1639579150concurso%20fin%20de%20a%C3%B1o%20BANNER%20%282%29%20%281%29.jpg",
-        href: "",
+        href: "#",
       },
       {
         id: 5,
         url: "https://laikapp.s3.amazonaws.com/dev_images_banners/1641408181beneficios-Light-pg-Mailing-650x800.jpg",
-        href: "",
+        href: "#",
       },
     ]),
       (this.categories = [
