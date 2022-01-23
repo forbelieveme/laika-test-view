@@ -58,36 +58,43 @@ export default {
           id: 1,
           title: "Alimento",
           url: "#",
+          icon: "apple-alt",
         },
         {
           id: 2,
           title: "Snacks",
           url: "#",
+          icon: "bone",
         },
         {
           id: 3,
           title: "Farmapet",
           url: "#",
+          icon: "prescription-bottle-alt",
         },
         {
           id: 4,
           title: "Cuidado e Higiene",
           url: "#",
+          icon: "pump-medical",
         },
         {
           id: 5,
           title: "Juguetes",
           url: "#",
+          icon: "baseball-ball",
         },
         {
           id: 6,
           title: "Accesorios",
           url: "#",
+          icon: "life-ring",
         },
         {
           id: 7,
           title: "Para PetLovers",
           url: "#",
+          icon: "heart",
         },
       ]);
   },
