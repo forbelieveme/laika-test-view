@@ -1,5 +1,5 @@
 <template>
-  <div class="accordion" id="accordionExample">
+  <div class="accordion d-block d-sm-none mb-1" id="accordionExample">
     <div class="accordion-item col-12 mx-2">
       <h2 class="accordion-header" id="headingOne">
         <button
