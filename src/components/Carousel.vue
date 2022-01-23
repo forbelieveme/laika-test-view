@@ -14,27 +14,28 @@
         aria-label="Slide 1"
       ></button>
       <button
+        :key="slide.id"
+        v-for="(slide, index) in slides.slice(1)"
         type="button"
         data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="1"
+        :data-bs-slide-to="index + 1"
         aria-label="Slide 2"
-      ></button>
-      <button
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide-to="2"
-        aria-label="Slide 3"
       ></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://dummyimage.com/1750x300/000/fff.jpg" class="d-block w-100" alt="..." />
+        <a :href="slides[0].href">
+          <img :src="slides[0].url" class="d-block w-100" alt="..." />
+        </a>
       </div>
-      <div class="carousel-item">
-        <img src="https://dummyimage.com/1750x300/000/fff.jpg" class="d-block w-100" alt="..." />
-      </div>
-      <div class="carousel-item">
-        <img src="https://dummyimage.com/1750x300/000/fff.jpg" class="d-block w-100" alt="..." />
+      <div
+        :key="slide.id"
+        v-for="slide in slides.slice(1)"
+        class="carousel-item"
+      >
+        <a :href="slide.href">
+          <img :src="slide.url" class="d-block w-100" :alt="slide.id" />
+        </a>
       </div>
     </div>
     <button
@@ -61,5 +62,12 @@
 <script>
 export default {
   name: "Carousel",
+  props: {
+    slides: Array,
+  },
 };
 </script>
+
+
+
+
