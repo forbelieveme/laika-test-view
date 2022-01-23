@@ -1,61 +1,13 @@
 <template>
-  <div id="footer-convenios" class="col-12 mt-5">
-    <div class="row">
-      <div class="col-auto">
-        <a href=""
-          ><img
-            src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="col-auto">
-        <a href=""
-          ><img
-            src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="col-auto">
-        <a href=""
-          ><img
-            src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="col-auto">
-        <a href=""
-          ><img
-            src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="col-auto">
-        <a href=""
-          ><img
-            src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="col-auto">
-        <a href=""
-          ><img
-            src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
-            alt=""
-          />
-        </a>
-      </div>
-      <div class="col-auto">
-        <a href=""
-          ><img
-            src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__large.png"
-            alt=""
-          />
-        </a>
+  <div id="footer-convenios" class="col-12 mt-5 bg-light">
+    <div class="row d-flex justify-content-evenly py-4">
+      <div
+        :key="partner.id"
+        v-for="partner in partners"
+        class="col-auto"
+        :id="partner.name"
+      >
+        <a :href="partner.href"><img :src="partner.url" alt="" /> </a>
       </div>
     </div>
   </div>
@@ -65,7 +17,13 @@
 export default {
   name: "Partners",
   props: {
-    parters: Array,
+    partners: Array,
   },
 };
 </script>
+
+<style scoped>
+#footer-convenios img {
+  width: 80px;
+}
+</style>
