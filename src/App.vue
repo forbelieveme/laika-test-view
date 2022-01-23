@@ -23,6 +23,7 @@ export default {
     return {
       categories: [],
       slides: [],
+      partners: [],
     };
   },
   created() {
@@ -95,6 +96,43 @@ export default {
           title: "Para PetLovers",
           url: "#",
           icon: "heart",
+        },
+      ]),
+      (this.partners = [
+        {
+          id: 1,
+          href: "#",
+          url: "",
+        },
+        {
+          id: 2,
+          href: "#",
+          url: "",
+        },
+        {
+          id: 3,
+          href: "#",
+          url: "",
+        },
+        {
+          id: 4,
+          href: "#",
+          url: "",
+        },
+        {
+          id: 5,
+          href: "#",
+          url: "",
+        },
+        {
+          id: 6,
+          href: "#",
+          url: "",
+        },
+        {
+          id: 7,
+          href: "#",
+          url: "",
         },
       ]);
   },
