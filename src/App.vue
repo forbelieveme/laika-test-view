@@ -26,7 +26,16 @@ export default {
       partners: [],
     };
   },
-  created() {
+  methods: {
+    async fetchProducts() {
+      const res = await fetch("http://localhost:5000/products");
+
+      const data = await res.json();
+
+      return data;
+    },
+  },
+  async created() {
     (this.slides = [
       {
         id: 1,
@@ -54,6 +63,7 @@ export default {
         href: "#",
       },
     ]),
+      (this.products = await this.fetchProducts()),
       (this.categories = [
         {
           id: 1,
