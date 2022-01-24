@@ -2,6 +2,7 @@
   <Header />
   <Carousel :slides="slides" />
   <Categories :categories="categories" />
+  <Products />
   <Footer :partners="partners" />
 </template>
 
@@ -10,6 +11,7 @@ import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import Carousel from "./components/Carousel.vue";
 import Categories from "./components/Categories.vue";
+import Products from "./components/Products.vue";
 
 export default {
   name: "App",
@@ -18,6 +20,7 @@ export default {
     Footer,
     Carousel,
     Categories,
+    Products,
   },
   data() {
     return {
