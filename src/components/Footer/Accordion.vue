@@ -21,7 +21,7 @@
         data-bs-parent="#accordionExample"
       >
         <div class="card-body px-3 py-2">
-          <a href="https://laika.com.co/about_us/bog">
+          <a class="nav-link p-0 text-muted" href="https://laika.com.co/about_us/bog">
             <h3 class="p_text_footer mb-1">Sobre Laika</h3>
           </a>
         </div>

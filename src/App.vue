@@ -155,4 +155,8 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.text_decoration_general {
+  text-decoration: none !important;
+}
 </style>
