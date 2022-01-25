@@ -2,7 +2,7 @@
   <Header />
   <Carousel :slides="slides" />
   <Categories :categories="categories" />
-  <Products />
+  <Products :products="products"/>
   <Footer :partners="partners" />
 </template>
 
@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     async fetchProducts() {
-      const res = await fetch("http://localhost:5000/products");
+      const res = await fetch("api/products");
 
       const data = await res.json();
 
