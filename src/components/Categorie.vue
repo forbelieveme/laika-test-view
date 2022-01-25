@@ -1,6 +1,6 @@
 <template>
-<!-- TODO -->
-<!-- Editar los estilos de hover -->
+  <!-- TODO -->
+  <!-- Editar los estilos de hover -->
   <div class="">
     <a
       :href="categorie.url"
@@ -8,7 +8,8 @@
       tabindex="-1"
       role="button"
       aria-disabled="true"
-      ><font-awesome-icon :icon="['fas', categorie.icon]" /> {{ categorie.title }}</a
+      ><font-awesome-icon :icon="['fas', categorie.icon]" />
+      {{ categorie.title }}</a
     >
   </div>
 </template>
@@ -16,14 +17,16 @@
 <script>
 export default {
   name: "Categorie",
-  props: { categorie: Object },
+  props: {
+    categorie: Object,
+  },
 };
 </script>
 
 <style scoped>
 .btn-categorie {
-    color: #603e85;
-    background-color: #fff;
-    border-color: rgba(116, 116, 116, 0.1);
+  color: #603e85;
+  background-color: #fff;
+  border-color: rgba(116, 116, 116, 0.1);
 }
 </style>
