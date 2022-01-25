@@ -12,7 +12,7 @@
         of the card's content.
       </p>
     </div>
-    <a href="#" class="btn btn-primary col-12 m-0">Go somewhere</a>
+    <a href="#" class="btn btn-primary col-12 m-0 mt-4">Go somewhere</a>
   </div>
 </template>
 
