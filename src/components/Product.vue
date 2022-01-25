@@ -9,15 +9,17 @@
       <h5 class="card-title text-start ms-3">Card title</h5>
       <div class="d-flex flex-column">
         <div class="d-flex justify-content-start ms-3">
-          <font-awesome-icon :icon="['fas', 'star']" />
-          <font-awesome-icon :icon="['fas', 'star']" />
-          <font-awesome-icon :icon="['fas', 'star']" />
-          <font-awesome-icon :icon="['fas', 'star']" />
-          <font-awesome-icon :icon="['fas', 'star']" />
+          <!-- TODO -->
+          <!-- Volver dinamico la cantidad de estrellas -->
+          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
+          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
+          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
+          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
+          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
         </div>
         <div class="d-flex justify-content-start flex-row ms-3">
           <span class="align-self-center price_big">$18.991</span>
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column ms-1">
             <span class="text_old_product">Antes</span>
             <strike class="text_old_price"> $19.990 </strike>
           </div>
@@ -29,10 +31,12 @@
             flex-row
             line_throught_info_cards_top
             ms-3
+            mt-2
+            pt-2
           "
         >
           <span class="align-self-center price_big">$16.992 </span>
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column ms-1">
             <img
               width="80"
               data-src="https://laika.com.co/assets/laikamemeber.svg"
@@ -45,7 +49,9 @@
             </button>
           </div>
         </div>
-        <a href="#" class="btn btn-primary col-12 m-0 mt-4">Go somewhere</a>
+        <a href="#" class="btn btn-primary col-12 m-0 mt-4 info_bubble"
+          >Go somewhere</a
+        >
       </div>
     </div>
   </div>
@@ -101,5 +107,18 @@ export default {
   color: #ac0000;
   font-size: 20px;
   font-family: Causten Round Semi Bold Oblique;
+}
+
+.color_estrella {
+  color: gold;
+}
+
+.info_bubble {
+  border-radius: 8px;
+  background-color: #603e85;
+  color: #fff;
+  padding: 10px;
+  overflow: hidden;
+  height: 56px;
 }
 </style>
