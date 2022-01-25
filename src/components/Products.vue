@@ -1,6 +1,6 @@
 <template>
-  <div class="container overflow-hidden">
-    <div class="row d-flex justify-content-center product_width">
+  <div class="container overflow-scroll no_scroll">
+    <div class="row d-flex justify-content-start product_width">
       <h3 class="pt-2">Productos</h3>
       <div :key="product.id" v-for="product in products" class="col-auto">
         <Product :product="product" />
@@ -24,9 +24,18 @@ export default {
 </script>
 
 <style scoped>
-
-
 .product_width {
   width: 2600px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no_scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no_scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 </style>
