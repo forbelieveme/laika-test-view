@@ -9,7 +9,11 @@
       <h5 class="card-title text-start ms-3">Card title</h5>
       <div class="d-flex flex-column ms-3">
         <div class="d-flex justify-content-start">
-          <p>1</p>
+          <font-awesome-icon :icon="['fas', 'star']" />
+          <font-awesome-icon :icon="['fas', 'star']" />
+          <font-awesome-icon :icon="['fas', 'star']" />
+          <font-awesome-icon :icon="['fas', 'star']" />
+          <font-awesome-icon :icon="['fas', 'star']" />
         </div>
         <div class="d-flex justify-content-start flex-row">
           <p>2</p>
