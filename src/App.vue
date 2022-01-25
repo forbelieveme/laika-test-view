@@ -2,7 +2,7 @@
   <Header />
   <Carousel :slides="slides" />
   <Categories :categories="categories" />
-  <Products :products="products"/>
+  <Products :products="products" />
   <Footer :partners="partners" />
 </template>
 
@@ -27,6 +27,7 @@ export default {
       categories: [],
       slides: [],
       partners: [],
+      products: [],
     };
   },
   methods: {
