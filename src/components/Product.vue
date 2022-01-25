@@ -6,11 +6,34 @@
       alt="..."
     />
     <div class="card-body d-flex flex-column p-0">
-      <h5 class="card-title d-flex justify-content-start ms-3">Card title</h5>
-      <p class="h6 heigh_container_info_cards text-start">
+      <h5 class="card-title text-start ms-3">Card title</h5>
+      <div class="d-flex flex-column ms-3">
+        <div class="d-flex justify-content-start">
+          <p>1</p>
+        </div>
+        <div class="d-flex justify-content-start flex-row">
+          <p>2</p>
+          <div class="d-flex flex-column">
+            <p>3</p>
+            <p>4</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-start flex-row">
+          <p>5</p>
+          <div class="d-flex flex-column">
+            <p>6</p>
+            <p>7</p>
+          </div>
+        </div>
+      </div>
+      <!-- * -->
+      <!-- * -->
+      <!-- * -->
+      <!-- * -->
+      <p class="heigh_container_info_cards d-flex justify-content-start ms-3">
         <span id="price_products_dog_1927">
-          <span id="price_dog_1927" class="mr-1">$18.991</span>
-          <span class="ml-2 text_old_product">
+          <span id="price_dog_1927" class="mr-1 ms-3">$18.991</span>
+          <span class="text_old_product">
             <span>Antes</span> <br />
             <strike id="price_old_dog_1927" class="text_old_price font-11">
               $19.990
@@ -28,7 +51,7 @@
                 src="https://laika.com.co/assets/laikamemeber.svg"
                 style=""
               />
-              <button class="font-12 btn_member btn_laika_member_cards">
+              <button class="font-12 btn_member btn_laika_member_cards w-25">
                 ADQUIÉRELA YA
               </button>
             </span>
