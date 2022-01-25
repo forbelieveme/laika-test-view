@@ -30,7 +30,7 @@
             justify-content-start
             flex-row
             line_throught_info_cards_top
-            ms-3
+            mx-3
             mt-2
             pt-2
           "
