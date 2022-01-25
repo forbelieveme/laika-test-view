@@ -16,17 +16,23 @@
           <font-awesome-icon :icon="['fas', 'star']" />
         </div>
         <div class="d-flex justify-content-start flex-row">
-          <p>2</p>
+          <span class="align-self-center">$18.991</span>
           <div class="d-flex flex-column">
-            <p>3</p>
-            <p>4</p>
+            <span>Antes</span>
+            <strike class="font-11"> $19.990 </strike>
           </div>
         </div>
         <div class="d-flex justify-content-start flex-row">
-          <p>5</p>
+          <span class="align-self-center">$16.992 </span>
           <div class="d-flex flex-column">
-            <p>6</p>
-            <p>7</p>
+            <img
+              width="80"
+              data-src="https://laika.com.co/assets/laikamemeber.svg"
+              class=""
+              src="https://laika.com.co/assets/laikamemeber.svg"
+              style=""
+            />
+            <button class="w-100 fs-6">ADQUIÉRELA YA</button>
           </div>
         </div>
       </div>
