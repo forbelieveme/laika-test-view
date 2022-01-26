@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg_purple">
+  <nav class="navbar navbar-expand-lg navbar-dark bg_purple d-block d-xl-none">
     <div class="container">
       <div class="d-flex w-100 row">
         <!-- ************** -->
@@ -136,7 +136,7 @@
 
   <nav class="navbar bg_purple d-none d-xl-block">
     <div class="container-fluid">
-      <div class="d-flex flex-row w-100">
+      <div class="d-flex flex-row w-100 my-3">
         <div class="d-flex justify-content-start ms-5">
           <a class="navbar-brand me-5" href="#">
             <img
