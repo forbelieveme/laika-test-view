@@ -1,8 +1,8 @@
 <template>
-    <Header></Header>
-    <Carousel></Carousel>
-    <Categories :categories="categories"></Categories>
-    <Footer></Footer>
+  <Header></Header>
+  <Carousel></Carousel>
+  <Categories :categories="categories"></Categories>
+  <Footer></Footer>
 </template>
 
 <script>
@@ -73,5 +73,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.bg_purple {
+  background-color: #603e85 !important;
 }
 </style>
