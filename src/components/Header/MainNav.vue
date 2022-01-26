@@ -106,13 +106,7 @@
       <!-- Barra de busqueda -->
       <!-- ************** -->
       <div
-        class="
-          input-group
-          col-12 col-md-12 col-lg-12
-          offset-xl-1
-          col-xl-7
-          p-0
-        "
+        class="input-group col-12 col-md-12 col-lg-12 offset-xl-1 col-xl-7 p-0"
       >
         <input
           type="text"
@@ -132,6 +126,88 @@
       <!-- ************** -->
       <!-- Barra de busqueda -->
       <!-- ************** -->
+    </div>
+  </nav>
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+
+  <nav class="navbar bg_purple d-none d-lg-block">
+    <div class="container-fluid">
+      <div class="d-flex flex-row w-100">
+        <div class="d-flex justify-content-start ms-5">
+          <a class="navbar-brand me-5" href="#">
+            <img
+              src="https://laika.com.co/assets/home/LaikaMascotas.svg"
+              alt=""
+              width="38"
+              height="32"
+            />
+          </a>
+          <div class="input-group p-0 search_width">
+            <input
+              type="text"
+              class="autocomplete_search_style form-control"
+              name="autocomplete_search"
+              id="autocomplete_search"
+              placeholder="¿Qué necesita tu mascota?"
+            />
+            <img
+              src="https://laika.com.co/assets/home/search_icon_mc.svg"
+              id="btn_result_search"
+              alt=""
+              class="icon_search"
+              style="visibility: visible"
+            />
+          </div>
+          <div class="d-flex flex-row">
+            <div class="ms-3 align-self-center">
+              <img
+                src="https://i.pinimg.com/originals/50/a7/c2/50a7c209831660bce1c7b647281e4e0a.png"
+                style="height: 30px; width: 50px"
+              />
+            </div>
+            <div class="text-white align-self-center">
+              <span>BOG</span>
+            </div>
+            <!-- TODO -->
+            <!-- insertar icono fontwaesome -->
+          </div>
+        </div>
+        <div class="d-flex justify-content-end ms-auto me-5">
+          <span class="text-white text-left mx-3 align-self-center fs-5">
+            <!-- TODO -->
+            <!-- insertar el fontawsom de usuario -->
+            <img
+              class="lazy"
+              data-src="https://laika.com.co/assets/home/truck_mc.svg"
+              src="https://laika.com.co/assets/home/truck_mc.svg"
+              style=""
+            />
+            Mi cuenta
+          </span>
+          <div class="btn-group align-self-center">
+            <span
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              class="cursor_pointer"
+            >
+              <div class="circle_bg_cart">
+                <img
+                  data-src=" https://laika.com.co/assets/home/cart_mc.svg "
+                  class="lazy vertical_at"
+                  src=" https://laika.com.co/assets/home/cart_mc.svg "
+                  style=""
+                />
+              </div>
+              <span class="badge badge_car rounded-circle">0</span>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
 </template>
@@ -193,5 +269,9 @@ export default {
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search_width {
+  min-width: 40vw;
 }
 </style>
