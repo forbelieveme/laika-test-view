@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-dark d-none d-lg-block">
+  <div class="navbar bg-dark d-none d-xl-block">
     <div class="container-fluid">
       <div class="d-flex flex-row w-100">
         <div class="d-flex justify-content-start ms-5 me-auto">
