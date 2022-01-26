@@ -167,7 +167,17 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+.bg_purple {
+  background-color: #603e85 !important;
+}
+.color_purple {
+  color: #603e85 !important;
+}
+
+.w-40 {
+  width: 40% !important;
 }
 
 .text_decoration_general {
