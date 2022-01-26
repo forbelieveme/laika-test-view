@@ -1,41 +1,54 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar bg-dark d-none d-lg-block">
     <div class="container-fluid">
-      <div class="collapse navbar-collapse" id="">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider" /></li>
-              <li>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+      <div class="d-flex flex-row w-100">
+        <div class="d-flex justify-content-start ms-5 me-auto">
+          <span class="text-white text-left pe-3 border-end fonts_11">
+            <img
+              class="lazy"
+              data-src=" https://laika.com.co/assets/home/secure_mc.svg "
+              src=" https://laika.com.co/assets/home/secure_mc.svg "
+              style=""
+            />
+            Compras seguras online
+          </span>
+          <span class="text-white text-left ms-3 pe-3 border-end fonts_11">
+            <img
+              class="lazy"
+              data-src="https://laika.com.co/assets/home/wallet_mc.svg"
+              src="https://laika.com.co/assets/home/wallet_mc.svg"
+              style=""
+            />Pago contra entrega
+          </span>
+          <span class="text-white text-left ms-3 fonts_11">
+            <img
+              class="lazy"
+              data-src="https://laika.com.co/assets/home/truck_mc.svg"
+              src="https://laika.com.co/assets/home/truck_mc.svg"
+              style=""
+            />
+            Entregas el mismo día
+          </span>
+        </div>
+        <div class="d-flex justify-content-end me-5">
+          <span
+            class="
+              text-white text-left
+              pe-3
+              border-end
+              fonts_11
+              align-self-center
+            "
+          >
+            Llamanos +573102563989
+          </span>
+          <span class="text-white text-left ms-3 fonts_11 align-self-center"
+            >Escribenos
+          </span>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script>
@@ -43,3 +56,9 @@ export default {
   name: "InfoNav",
 };
 </script>
+
+<style scoped>
+.fonts_11 {
+  font-size: 11px;
+}
+</style>
