@@ -78,4 +78,11 @@ export default {
 .bg_purple {
   background-color: #603e85 !important;
 }
+.color_purple {
+  color: #603e85 !important;
+}
+
+.w-40 {
+  width: 40% !important;
+}
 </style>
