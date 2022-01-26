@@ -62,7 +62,7 @@
     </div>
   </div>
 
-  <div class="navbar bg-white d-none d-xl-block">
+  <div class="navbar bg-white d-none d-xl-block sticky-top">
     <div class="container-fluid">
       <div class="d-flex flex-row w-100 justify-content-between">
         <div class="d-flex w-40 justify-content-center">

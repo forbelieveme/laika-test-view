@@ -1,7 +1,9 @@
 <template>
   <InfoNav></InfoNav>
-  <MainNav class="sticky-top"></MainNav>
-  <SalesNav></SalesNav>
+  <div class="sticky-top">
+    <MainNav></MainNav>
+    <SalesNav></SalesNav>
+  </div>
 </template>
 
 <script>
