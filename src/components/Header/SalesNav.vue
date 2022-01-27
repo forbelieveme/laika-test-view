@@ -1,73 +1,61 @@
 <template>
-  <div
-    class="
-      d-xs-flex d-sm-none d-md-none d-xl-none
-      col-12
-      row
-      mx-auto
-      py-2
-      bg-white
-      justify-content-center
-    "
-  >
-    <a href="#" class="col-4 offset-2">
-      <div class="" style="cursor: pointer; background: #603e85; color: #fff">
-        <span class="ml-2" style="background: #603e85; color: #fff">
-          Perro
-        </span>
-        <span class="text-left text-white mr-1 ml-1">
-          <img
-            width="30"
-            src="https://laika.com.co/assets/home/dog_mc.svg "
-            alt="Colombia "
-          />
-        </span>
-      </div>
-    </a>
-    <a href="#" class="col-4">
-      <div class="ml-2" style="cursor: pointer">
-        <span class="ml-2" style=""> Gato </span>
-        <span class="text-left text-white mr-1 ml-1">
-          <img
-            width="30"
-            class="no_decoration_links"
-            src="https://laika.com.co/assets/home/cat_mc_s.svg "
-            alt="Colombia "
-          />
-        </span>
-      </div>
-    </a>
-    <div
-      id="header_pets_dog_cat_resp"
-      class="
-        px-0
-        d-sm-flex d-xl-none
-        row
-        col-12
-        mx-auto
-        py-2
-        bg-white
-        justify-content-center
-      "
-    >
+  <div class="d-flex flex-column d-block d-xl-none">
+    <div class="d-flex flex-row justify-content-center">
+      <a href="#" class="bg_purple m-1 rounded p-1 text-decoration-none">
+        <div class="d-flex">
+          <span class="text-white align-self-center"> Perro </span>
+          <span class="text-left text-white">
+            <img
+              width="30"
+              src="https://laika.com.co/assets/home/dog_mc.svg"
+              alt="Colombia "
+            />
+          </span>
+        </div>
+      </a>
+      <a href="#" class="m-1 text-decoration-none m-1 rounded p-1">
+        <div class="d-flex">
+          <span class="color_purple align-self-center"> Gato </span>
+          <span class="text-left text-white">
+            <img
+              width="30"
+              src="https://laika.com.co/assets/home/cat_mc_s.svg"
+              alt="Colombia "
+            />
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="d-flex flex-column flex-md-row justify-content-center">
       <div>
-        <input type="hidden" id="clevertap_membership" />
         <img
           data-src=" https://lkdev-webcol.laika.com.co/assets/laika_vetcare/membership_logo.png "
           src=" https://lkdev-webcol.laika.com.co/assets/laika_vetcare/membership_logo.png "
-          class="cursor_pointer lazy br-8 mx-2"
+          class="lazy m-1"
           style=""
         />
       </div>
+      <div>
+        <button
+          class="w-md-100 btn_member btn_laika_member_cards fw-bolder m-1"
+        >
+          ADQUIÉRELA YA
+        </button>
+      </div>
     </div>
   </div>
-<!-- * -->
-<!-- * -->
-<!-- * -->
-<!-- * -->
-<!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
 
-  <div class="navbar bg-white d-none d-xl-block sticky-top">
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+
+  <div class="navbar bg-white d-none d-xl-block">
     <div class="container-fluid">
       <div class="d-flex flex-row w-100 justify-content-between">
         <div class="d-flex w-40 justify-content-center">
@@ -296,5 +284,18 @@ a {
   max-height: 480px;
   width: auto;
   height: auto;
+}
+.btn_member {
+  border-radius: 5px;
+  background: #ffb100;
+  background: linear-gradient(0deg, #ffb100 0, #ffcb24 100%);
+  font-family: Causten Round Extra Bold Oblique !important;
+  color: #1f033e;
+}
+
+.btn_laika_member_cards {
+  padding: 5px;
+  border: 0;
+  font-size: 1.1rem;
 }
 </style>

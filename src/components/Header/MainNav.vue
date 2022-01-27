@@ -92,7 +92,7 @@
   <!-- * -->
   <!-- * -->
 
-  <nav class="navbar bg_purple d-none d-xl-block sticky-top">
+  <nav class="navbar bg_purple d-none d-xl-block">
     <div class="container-fluid">
       <div class="d-flex flex-row w-100 my-3">
         <div class="d-flex justify-content-start ms-5">
