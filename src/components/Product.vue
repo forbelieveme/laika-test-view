@@ -21,7 +21,7 @@
           <span class="align-self-center price_big">$18.991</span>
           <div class="d-flex flex-column ms-1">
             <span class="text_old_product">Antes</span>
-            <strike class="text_old_price"> $19.990 </strike>
+            <span class="text_old_price"> $19.990 </span>
           </div>
         </div>
         <div
