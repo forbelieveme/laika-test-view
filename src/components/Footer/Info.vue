@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-6 d-none d-lg-block">
+  <div class="col-lg-6 d-none d-xl-block">
     <div class="row">
       <div class="col-lg-4 text-start color_purple fw-bolder">
         <h5 class="fw-bolder">ACERCA DE LAIKA</h5>
