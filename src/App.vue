@@ -1,5 +1,5 @@
 <template>
-  <Header />
+  <Header :categories="categories" />
   <Carousel :slides="slides" />
   <Categories :categories="categories" />
   <Products :products="products" />
@@ -28,6 +28,7 @@ export default {
       slides: [],
       partners: [],
       products: [],
+      hovered: false,
     };
   },
   methods: {
@@ -182,5 +183,9 @@ export default {
 
 .text_decoration_general {
   text-decoration: none !important;
+}
+
+.foo-hover {
+  color: red;
 }
 </style>
