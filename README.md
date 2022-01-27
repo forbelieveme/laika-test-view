@@ -1,24 +1,18 @@
 # vuejs_laika_test
 
-## Project setup
+## Inicializacion del proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compila el proyecto para ejecucion
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Corre servidor backend api para test
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
