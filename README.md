@@ -12,7 +12,7 @@ npm run serve
 
 ### Corre servidor backend api para test
 ```
-npm run build
+npm run backend
 ```
 
 
