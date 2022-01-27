@@ -1,133 +1,91 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg_purple d-block d-xl-none">
-    <div class="container">
-      <div class="d-flex w-100 row">
-        <!-- ************** -->
-        <!-- Boton de collapse -->
-        <!-- ************** -->
-        <button
-          class="navbar-toggler col-1"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- ************** -->
-        <!-- Boton de collapse -->
-        <!-- ************** -->
-
-        <!-- ************** -->
-        <!-- Logo -->
-        <!-- ************** -->
-        <a class="navbar-brand col-3 offset-4" href="#">
-          <img
-            src="https://laika.com.co/assets/home/LaikaMascotas.svg"
-            alt=""
-            width="30"
-            height="24"
-            class="d-inline-block align-text-top"
-          />
-        </a>
-        <!-- ************** -->
-        <!-- Logo -->
-        <!-- ************** -->
-
-        <!-- ************** -->
-        <!-- Ubicacion -->
-        <!-- ************** -->
-        <div class="d-flex flex-row col-2">
-          <div class="d-flex flex-column position-relative">
-            <img
-              src="https://i.pinimg.com/originals/50/a7/c2/50a7c209831660bce1c7b647281e4e0a.png"
-              style="height: 15px; width: 35px"
-            />
-            <div class="text-white d-inline">
-              <span>BOG</span>
-            </div>
+  <nav class="navbar navbar-dark bg_purple d-block d-xl-none sticky-top">
+    <div class="container-fluid">
+      <div class="d-flex flex-column w-100 mx-2">
+        <div class="d-flex flex-row justify-content-between">
+          <div class="d-flex justify-content-start">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent2"
+              aria-controls="navbarSupportedContent2"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-          <span class="d-flex align-self-center">
-            <div class="px-2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14.225"
-                height="8.107"
-                viewBox="0 0 14.225 8.107"
-                style="height: 6px; top: 5px"
-              >
-                <g>
-                  <path
-                    fill="white"
-                    d="M104.955 7.816l-6.116 6.116a1 1 0 1 1-1.409-1.409l5.412-5.412L97.43 1.7A1 1 0 0 1 98.839.292l6.116 6.116a1 1 0 0 1 0 1.408z"
-                    transform="rotate(90 7.112 7.113) translate(-97.139)"
-                  ></path>
-                </g>
-              </svg>
+          <div class="d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://laika.com.co/assets/home/LaikaMascotas.svg"
+                alt=""
+                width="30"
+                height="24"
+                class="d-inline-block align-text-top"
+              />
+            </a>
+          </div>
+          <div class="d-flex justify-content-between">
+            <div class="d-flex flex-row me-2">
+              <div class="d-flex flex-column me-1">
+                <img
+                  src="https://i.pinimg.com/originals/50/a7/c2/50a7c209831660bce1c7b647281e4e0a.png"
+                  style="height: 15px; width: 35px"
+                />
+                <div class="text-white d-inline">
+                  <span>BOG</span>
+                </div>
+              </div>
+              <span class="d-flex align-self-center">
+                <font-awesome-icon
+                  :icon="['fas', 'chevron-down']"
+                  class="align-self-center text-white"
+                />
+              </span>
             </div>
-          </span>
-        </div>
-        <!-- ************** -->
-        <!-- Ubicacion -->
-        <!-- ************** -->
-
-        <!-- ************** -->
-        <!-- Carro de compras -->
-        <!-- ************** -->
-        <div class="d-flex flex-row col-1 pl-4">
-          <div>
-            <div class="btn-group">
+            <div class="btn-group align-self-center">
               <span
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                class="cursor_pointer"
-                ><div class="circle_bg_cart">
+              >
+                <div>
                   <img
                     data-src=" https://laika.com.co/assets/home/cart_mc.svg "
-                    class="lazy vertical_at"
+                    class="lazy"
                     src=" https://laika.com.co/assets/home/cart_mc.svg "
                     style=""
                   />
                 </div>
-                <span class="badge badge_car rounded-circle">0</span></span
-              >
+                <span class="badge badge_car rounded-circle">0</span>
+              </span>
             </div>
           </div>
         </div>
+        <div class="d-flex">
+          <div class="input-group">
+            <input
+              type="text"
+              class="autocomplete_search_style form-control"
+              name="autocomplete_search"
+              id="autocomplete_search"
+              placeholder="¿Qué necesita tu mascota?"
+            />
+            <img
+              src="https://laika.com.co/assets/home/search_icon_mc.svg"
+              id="btn_result_search"
+              alt=""
+              class="icon_search"
+              style="visibility: visible"
+            />
+          </div>
+        </div>
       </div>
-      <!-- ************** -->
-      <!-- Carro de compras -->
-      <!-- ************** -->
-
-      <!-- ************** -->
-      <!-- Barra de busqueda -->
-      <!-- ************** -->
-      <div
-        class="input-group col-12 col-md-12 col-lg-12 offset-xl-1 col-xl-7 p-0"
-      >
-        <input
-          type="text"
-          class="autocomplete_search_style form-control"
-          name="autocomplete_search"
-          id="autocomplete_search"
-          placeholder="¿Qué necesita tu mascota?"
-        />
-        <img
-          src="https://laika.com.co/assets/home/search_icon_mc.svg"
-          id="btn_result_search"
-          alt=""
-          class="icon_search"
-          style="visibility: visible"
-        />
-      </div>
-      <!-- ************** -->
-      <!-- Barra de busqueda -->
-      <!-- ************** -->
     </div>
   </nav>
+
   <!-- * -->
   <!-- * -->
   <!-- * -->
