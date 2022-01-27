@@ -126,8 +126,11 @@
                     </button>
                   </div>
                 </div>
-                <div class="d-flex flex-column w-100 bg-white">
-                  <h1>Hola</h1>
+                <div class="d-flex w-100 bg-white justify-content-end">
+                  <img
+                    class="img_width"
+                    src="https://i.pinimg.com/736x/6a/68/1b/6a681bfc979f63e3759d2a59ce3ea298.jpg"
+                  />
                 </div>
               </div>
             </div>
@@ -241,7 +244,7 @@ export default {
   },
   data() {
     return {
-      isActive: true,
+      isActive: false,
     };
   },
   methods: {
@@ -280,5 +283,13 @@ a {
 
 .fs_categories {
   font-size: 1.3rem;
+}
+
+.img_width {
+  display: block;
+  max-width: 230px;
+  max-height: 480px;
+  width: auto;
+  height: auto;
 }
 </style>
