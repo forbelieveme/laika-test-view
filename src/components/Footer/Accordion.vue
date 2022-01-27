@@ -1,6 +1,6 @@
 <template>
   <div class="accordion d-block d-xl-none mb-1" :id="'A' + data[0].btnName">
-    <div class="accordion-item col-12">
+    <div class="accordion-item col-12 shadow-sm border-0">
       <h2 class="accordion-header" id="headingOne">
         <button
           class="accordion-button collapsed color_purple fw-bolder fs-7"
