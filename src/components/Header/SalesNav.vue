@@ -132,14 +132,16 @@
             id="menu_gato"
             aria-haspopup="true"
             aria-expanded="false"
-            class="mx-3 align-self-center"
+            class="mx-3 align-self-center position-relative"
+            @mouseenter="menuToggle2"
+            @mouseleave="menuToggle2"
           >
             <span class="text-left text-white">
               <img
                 width="30"
-                src="https://laika.com.co/assets/home/cat_mc_s.svg"
+                src="https://laika.com.co/assets/home/cat_mc_s.svg "
               />
-              <span id="active-cat" class="color_purple">
+              <span id="active-dog" class="color_purple align-self-center">
                 Compra para gato
               </span>
               <img
@@ -149,6 +151,51 @@
                 style="height: 11px"
               />
             </span>
+
+            <div
+              class="position-absolute start-0 hidden_menu_width"
+              :class="{ 'visually-hidden': isActive2 }"
+              @mouseenter="menuToggle2"
+            >
+              <div class="d-flex flex-row w-100 bg-white">
+                <div class="d-flex flex-column w-100 bg-white">
+                  <div class="list-group list-group-flush">
+                    <button
+                      :key="categorie.id"
+                      v-for="categorie in categories"
+                      class="
+                        list-group-item list-group-item-action
+                        d-flex
+                        justify-content-between
+                      "
+                    >
+                      <div class="">
+                        <a
+                          :href="categorie.url"
+                          class="btn btn-categorie tn-lg my-1 fs_categories"
+                          tabindex="-1"
+                          role="button"
+                          aria-disabled="true"
+                        >
+                          <font-awesome-icon :icon="['fas', categorie.icon]" />
+                          {{ categorie.title }}
+                        </a>
+                      </div>
+                      <font-awesome-icon
+                        :icon="['fas', 'chevron-right']"
+                        class="align-self-center"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex w-100 bg-white justify-content-end">
+                  <img
+                    class="img_width"
+                    src="https://viralcats.net/blog/wp-content/uploads/2020/02/Relaxed-by-Ionut-Donici.jpg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- *************** -->
@@ -237,7 +284,8 @@ export default {
   },
   data() {
     return {
-      isActive: false,
+      isActive: true,
+      isActive2: true,
     };
   },
   methods: {
@@ -251,6 +299,16 @@ export default {
         this.isActive = !this.isActive;
       }
     },
+    menuToggle2(event) {
+      // `this` inside methods points to the current active instance
+      // console.log(event.fromElement.id);
+      // `event` is the native DOM event
+      if (event.type === "mouseenter") {
+        this.isActive2 = !this.isActive2;
+      } else if (event.type === "mouseleave") {
+        this.isActive2 = !this.isActive2;
+      }
+    },
   },
 };
 </script>
@@ -258,6 +316,7 @@ export default {
 <style scoped>
 .hidden_menu_width {
   width: 50vw;
+  z-index: 10;
 }
 
 .list-group-item {
