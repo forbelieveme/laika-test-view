@@ -1,6 +1,6 @@
 <template>
+  <h3 class="pt-2 text-lg-start fw-bolder mx-2">Categorias</h3>
   <div class="row d-flex justify-content-center">
-    <h3 class="pt-2">Categoria</h3>
     <div
       :key="categorie.id"
       v-for="categorie in categories"
