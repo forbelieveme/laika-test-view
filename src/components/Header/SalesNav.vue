@@ -71,16 +71,15 @@
             aria-haspopup="true"
             aria-expanded="false"
             class="mx-3 align-self-center position-relative"
+            @mouseenter="menuToggle"
+            @mouseleave="menuToggle"
           >
             <span class="text-left text-white">
               <img
                 width="30"
                 src="https://laika.com.co/assets/home/dog_mc.svg "
               />
-              <span
-                id="active-dog"
-                class="color_purple align-self-center"
-              >
+              <span id="active-dog" class="color_purple align-self-center">
                 Compra para perro
               </span>
               <img
@@ -91,7 +90,11 @@
               />
             </span>
 
-            <div class="position-absolute start-0 mt-1 hidden_menu_width">
+            <div
+              class="position-absolute start-0 hidden_menu_width"
+              :class="{ 'visually-hidden': !isActive }"
+              @mouseenter="menuToggle"
+            >
               <div class="d-flex flex-row w-100 bg-white">
                 <div class="d-flex flex-column w-100 bg-white">
                   <div class="list-group list-group-flush">
@@ -235,6 +238,23 @@ export default {
   name: "SalesNav",
   props: {
     categories: Array,
+  },
+  data() {
+    return {
+      isActive: true,
+    };
+  },
+  methods: {
+    menuToggle(event) {
+      // `this` inside methods points to the current active instance
+      // console.log(event.fromElement.id);
+      // `event` is the native DOM event
+      if (event.type === "mouseenter") {
+        this.isActive = !this.isActive;
+      } else if (event.type === "mouseleave") {
+        this.isActive = !this.isActive;
+      }
+    },
   },
 };
 </script>
