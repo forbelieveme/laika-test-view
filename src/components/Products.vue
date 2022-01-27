@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-5"> 
+  <div class="mx-lg-5"> 
     <h3 class="pt-2 text-lg-start fw-bolder mx-2">Productos</h3>
     <div class="container overflow-scroll no_scroll">
       <div class="row d-flex justify-content-start product_width">
