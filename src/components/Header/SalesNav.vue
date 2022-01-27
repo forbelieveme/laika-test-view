@@ -92,7 +92,7 @@
 
             <div
               class="position-absolute start-0 hidden_menu_width"
-              :class="{ 'visually-hidden': !isActive }"
+              :class="{ 'visually-hidden': isActive }"
               @mouseenter="menuToggle"
             >
               <div class="d-flex flex-row w-100 bg-white">
