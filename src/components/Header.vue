@@ -2,7 +2,7 @@
   <InfoNav></InfoNav>
   <div class="sticky-top">
     <MainNav></MainNav>
-    <SalesNav></SalesNav>
+    <SalesNav :categories="categories"></SalesNav>
   </div>
 </template>
 
@@ -18,6 +18,11 @@ export default {
     InfoNav,
     SalesNav,
   },
+  props: {
+    categories: Array,
+  },
+  methods:{
+  }
 };
 </script>
 
