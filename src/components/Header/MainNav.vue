@@ -4,15 +4,7 @@
       <div class="d-flex flex-column w-100 mx-2">
         <div class="d-flex flex-row justify-content-between">
           <div class="d-flex justify-content-start">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent2"
-              aria-controls="navbarSupportedContent2"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button class="navbar-toggler" type="button" @click="menuToggle">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
@@ -64,7 +56,7 @@
             </div>
           </div>
         </div>
-        <div class="d-flex">
+        <div class="d-flex mt-2">
           <div class="input-group">
             <input
               type="text"
@@ -83,6 +75,13 @@
           </div>
         </div>
       </div>
+    </div>
+    <div
+      class="position-absolute start-0 w-100 offcanvas_2 offcanvas_start"
+      :class="{ show: isActive }"
+      style="visibility: visible"
+    >
+      HolaHolaHolaHola
     </div>
   </nav>
 
@@ -173,6 +172,24 @@
 <script>
 export default {
   name: "MainNav",
+  data() {
+    return {
+      isActive: false,
+    };
+  },
+  methods: {
+    menuToggle(event) {
+      // `this` inside methods points to the current active instance
+      this.isActive = !this.isActive;
+      // console.log(event.fromElement.id);
+      // `event` is the native DOM event
+      if (event.type === "mouseenter") {
+        this.isActive = !this.isActive;
+      } else if (event.type === "mouseleave") {
+        this.isActive = !this.isActive;
+      }
+    },
+  },
 };
 </script>
 
@@ -231,5 +248,33 @@ export default {
 
 .search_width {
   min-width: 40vw;
+}
+
+.offcanvas_start {
+  width: 100vw;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%);
+}
+
+.offcanvas_2 {
+  z-index: 0;
+  display: flex;
+  z-index: 1045;
+  flex-direction: column;
+  max-width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  background-color: #fff;
+  background-clip: padding-box;
+  outline: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box {
+  border: 2px red dotted;
+}
+
+.offcanvas_2.show {
+  transform: none;
 }
 </style>
