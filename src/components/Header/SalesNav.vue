@@ -70,14 +70,17 @@
             id="menu_perro"
             aria-haspopup="true"
             aria-expanded="false"
-            class="mx-3 align-self-center"
+            class="mx-3 align-self-center position-relative"
           >
             <span class="text-left text-white">
               <img
                 width="30"
                 src="https://laika.com.co/assets/home/dog_mc.svg "
               />
-              <span id="active-dog" class="color_purple align-self-center">
+              <span
+                id="active-dog"
+                class="color_purple align-self-center"
+              >
                 Compra para perro
               </span>
               <img
@@ -87,6 +90,44 @@
                 style="height: 11px"
               />
             </span>
+
+            <div class="position-absolute start-0 mt-1 hidden_menu_width">
+              <div class="d-flex flex-row w-100 bg-white">
+                <div class="d-flex flex-column w-100 bg-white">
+                  <div class="list-group list-group-flush">
+                    <button
+                      :key="categorie.id"
+                      v-for="categorie in categories"
+                      class="
+                        list-group-item list-group-item-action
+                        d-flex
+                        justify-content-between
+                      "
+                    >
+                      <div class="">
+                        <a
+                          :href="categorie.url"
+                          class="btn btn-categorie tn-lg my-1 fs_categories"
+                          tabindex="-1"
+                          role="button"
+                          aria-disabled="true"
+                        >
+                          <font-awesome-icon :icon="['fas', categorie.icon]" />
+                          {{ categorie.title }}
+                        </a>
+                      </div>
+                      <font-awesome-icon
+                        :icon="['fas', 'chevron-right']"
+                        class="align-self-center"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex flex-column w-100 bg-white">
+                  <h1>Hola</h1>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             id="menu_gato"
@@ -192,8 +233,32 @@
 <script>
 export default {
   name: "SalesNav",
+  props: {
+    categories: Array,
+  },
 };
 </script>
 
 <style scoped>
+.hidden_menu_width {
+  width: 50vw;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  color: #212529;
+  text-decoration: none;
+  background-color: #fff;
+}
+
+a {
+  color: #603e85;
+  background-color: #fff;
+  border: 0 !important;
+}
+
+.fs_categories {
+  font-size: 1.3rem;
+}
 </style>
