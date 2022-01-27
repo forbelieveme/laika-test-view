@@ -2,8 +2,8 @@
   <InfoNav></InfoNav>
   <div class="sticky-top">
     <MainNav></MainNav>
-    <SalesNav :categories="categories"></SalesNav>
   </div>
+  <SalesNav :categories="categories"></SalesNav>
 </template>
 
 <script>
@@ -21,8 +21,7 @@ export default {
   props: {
     categories: Array,
   },
-  methods:{
-  }
+  methods: {},
 };
 </script>
 
