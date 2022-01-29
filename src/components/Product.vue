@@ -6,22 +6,24 @@
       alt="..."
     />
     <div class="card-body d-flex flex-column p-0">
-      <h5 class="card-title text-start ms-3">Card title</h5>
+      <h5 class="card-title text-start ms-3 fw-bolder">{{ product.title }}</h5>
       <div class="d-flex flex-column">
         <div class="d-flex justify-content-start ms-3">
           <!-- TODO -->
           <!-- Volver dinamico la cantidad de estrellas -->
-          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
-          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
-          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
-          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
-          <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
+          <div
+            :key="index"
+            v-for="(n, index) in product.stars"
+            class="col-auto"
+          >
+            <font-awesome-icon :icon="['fas', 'star']" class="color_estrella" />
+          </div>
         </div>
         <div class="d-flex justify-content-start flex-row ms-3">
-          <span class="align-self-center price_big">$18.991</span>
+          <span class="align-self-center price_big">${{ product.price }}</span>
           <div class="d-flex flex-column ms-1">
             <span class="text_old_product">Antes</span>
-            <span class="text_old_price"> $19.990 </span>
+            <span class="text_old_price"> ${{ product.oldPrice }} </span>
           </div>
         </div>
         <div
@@ -35,7 +37,9 @@
             pt-2
           "
         >
-          <span class="align-self-center price_big">$16.992 </span>
+          <span class="align-self-center price_big"
+            >${{ product.pricemember }}</span
+          >
           <div class="d-flex flex-column ms-1">
             <img
               width="80"
@@ -49,8 +53,10 @@
             </button>
           </div>
         </div>
-        <a href="#" class="btn btn-primary col-12 m-0 mt-4 info_bubble"
-          >Go somewhere</a
+        <a
+          href="#"
+          class="btn btn-primary col-12 m-0 mt-4 info_bubble fw-bolder"
+          >Agregar al carrito</a
         >
       </div>
     </div>

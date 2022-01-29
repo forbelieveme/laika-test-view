@@ -77,11 +77,12 @@
       </div>
     </div>
     <div
-      class="position-absolute start-0 w-100 offcanvas_2 offcanvas_start"
+      class="position-absolute start-0 w-100 offcanvas_2 offcanvas_start mt-2"
       :class="{ show: isActive }"
       style="visibility: visible"
     >
-      HolaHolaHolaHola
+      <Accordion :data="links.perro" />
+      <Accordion :data="links.gato" />
     </div>
   </nav>
 
@@ -91,7 +92,7 @@
   <!-- * -->
   <!-- * -->
 
-  <nav class="navbar bg_purple d-none d-xl-block sticky-top">
+  <nav class="navbar bg_purple d-none d-xl-block">
     <div class="container-fluid">
       <div class="d-flex flex-row w-100 my-3">
         <div class="d-flex justify-content-start ms-5">
@@ -170,12 +171,17 @@
 </template>
 
 <script>
+import Accordion from "../Footer/Accordion.vue";
 export default {
   name: "MainNav",
   data() {
     return {
       isActive: false,
+      links: {},
     };
+  },
+  components: {
+    Accordion,
   },
   methods: {
     menuToggle(event) {
@@ -189,6 +195,36 @@ export default {
         this.isActive = !this.isActive;
       }
     },
+  },
+  created() {
+    this.links = {
+      perro: [
+        {
+          id: 1,
+          url: "#",
+          text: "Alimento",
+          btnName: "primer_acc",
+          title: "Perro",
+        },
+        { id: 2, url: "#", text: "Snacks" },
+        { id: 3, url: "#", text: "Farmapet" },
+        { id: 4, url: "#", text: "Cuidado e igiene" },
+        { id: 5, url: "#", text: "Juguetes" },
+      ],
+      gato: [
+        {
+          id: 1,
+          url: "#",
+          text: "Alimento",
+          btnName: "segundo_acc",
+          title: "Gato",
+        },
+        { id: 2, url: "#", text: "Snacks" },
+        { id: 3, url: "#", text: "Farmapet" },
+        { id: 4, url: "#", text: "Cuidado e igiene" },
+        { id: 5, url: "#", text: "Juguetes" },
+      ],
+    };
   },
 };
 </script>

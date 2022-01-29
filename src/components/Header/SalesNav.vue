@@ -1,73 +1,61 @@
 <template>
-  <div
-    class="
-      d-xs-flex d-sm-none d-md-none d-xl-none
-      col-12
-      row
-      mx-auto
-      py-2
-      bg-white
-      justify-content-center
-    "
-  >
-    <a href="#" class="col-4 offset-2">
-      <div class="" style="cursor: pointer; background: #603e85; color: #fff">
-        <span class="ml-2" style="background: #603e85; color: #fff">
-          Perro
-        </span>
-        <span class="text-left text-white mr-1 ml-1">
-          <img
-            width="30"
-            src="https://laika.com.co/assets/home/dog_mc.svg "
-            alt="Colombia "
-          />
-        </span>
-      </div>
-    </a>
-    <a href="#" class="col-4">
-      <div class="ml-2" style="cursor: pointer">
-        <span class="ml-2" style=""> Gato </span>
-        <span class="text-left text-white mr-1 ml-1">
-          <img
-            width="30"
-            class="no_decoration_links"
-            src="https://laika.com.co/assets/home/cat_mc_s.svg "
-            alt="Colombia "
-          />
-        </span>
-      </div>
-    </a>
-    <div
-      id="header_pets_dog_cat_resp"
-      class="
-        px-0
-        d-sm-flex d-xl-none
-        row
-        col-12
-        mx-auto
-        py-2
-        bg-white
-        justify-content-center
-      "
-    >
+  <div class="d-flex flex-column d-block d-xl-none">
+    <div class="d-flex flex-row justify-content-center">
+      <a href="#" class="bg_purple m-1 rounded p-1 text-decoration-none">
+        <div class="d-flex">
+          <span class="text-white align-self-center"> Perro </span>
+          <span class="text-left text-white">
+            <img
+              width="30"
+              src="https://laika.com.co/assets/home/dog_mc.svg"
+              alt="Colombia "
+            />
+          </span>
+        </div>
+      </a>
+      <a href="#" class="m-1 text-decoration-none m-1 rounded p-1">
+        <div class="d-flex">
+          <span class="color_purple align-self-center"> Gato </span>
+          <span class="text-left text-white">
+            <img
+              width="30"
+              src="https://laika.com.co/assets/home/cat_mc_s.svg"
+              alt="Colombia "
+            />
+          </span>
+        </div>
+      </a>
+    </div>
+    <div class="d-flex flex-column flex-md-row justify-content-center">
       <div>
-        <input type="hidden" id="clevertap_membership" />
         <img
           data-src=" https://lkdev-webcol.laika.com.co/assets/laika_vetcare/membership_logo.png "
           src=" https://lkdev-webcol.laika.com.co/assets/laika_vetcare/membership_logo.png "
-          class="cursor_pointer lazy br-8 mx-2"
+          class="lazy m-1"
           style=""
         />
       </div>
+      <div>
+        <button
+          class="w-md-100 btn_member btn_laika_member_cards fw-bolder m-1"
+        >
+          ADQUIÉRELA YA
+        </button>
+      </div>
     </div>
   </div>
-<!-- * -->
-<!-- * -->
-<!-- * -->
-<!-- * -->
-<!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
 
-  <div class="navbar bg-white d-none d-xl-block sticky-top">
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+  <!-- * -->
+
+  <div class="navbar bg-white d-none d-xl-block">
     <div class="container-fluid">
       <div class="d-flex flex-row w-100 justify-content-between">
         <div class="d-flex w-40 justify-content-center">
@@ -144,14 +132,16 @@
             id="menu_gato"
             aria-haspopup="true"
             aria-expanded="false"
-            class="mx-3 align-self-center"
+            class="mx-3 align-self-center position-relative"
+            @mouseenter="menuToggle2"
+            @mouseleave="menuToggle2"
           >
             <span class="text-left text-white">
               <img
                 width="30"
-                src="https://laika.com.co/assets/home/cat_mc_s.svg"
+                src="https://laika.com.co/assets/home/cat_mc_s.svg "
               />
-              <span id="active-cat" class="color_purple">
+              <span id="active-dog" class="color_purple align-self-center">
                 Compra para gato
               </span>
               <img
@@ -161,6 +151,51 @@
                 style="height: 11px"
               />
             </span>
+
+            <div
+              class="position-absolute start-0 hidden_menu_width"
+              :class="{ 'visually-hidden': isActive2 }"
+              @mouseenter="menuToggle2"
+            >
+              <div class="d-flex flex-row w-100 bg-white">
+                <div class="d-flex flex-column w-100 bg-white">
+                  <div class="list-group list-group-flush">
+                    <button
+                      :key="categorie.id"
+                      v-for="categorie in categories"
+                      class="
+                        list-group-item list-group-item-action
+                        d-flex
+                        justify-content-between
+                      "
+                    >
+                      <div class="">
+                        <a
+                          :href="categorie.url"
+                          class="btn btn-categorie tn-lg my-1 fs_categories"
+                          tabindex="-1"
+                          role="button"
+                          aria-disabled="true"
+                        >
+                          <font-awesome-icon :icon="['fas', categorie.icon]" />
+                          {{ categorie.title }}
+                        </a>
+                      </div>
+                      <font-awesome-icon
+                        :icon="['fas', 'chevron-right']"
+                        class="align-self-center"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div class="d-flex w-100 bg-white justify-content-end">
+                  <img
+                    class="img_width"
+                    src="https://viralcats.net/blog/wp-content/uploads/2020/02/Relaxed-by-Ionut-Donici.jpg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- *************** -->
@@ -249,7 +284,8 @@ export default {
   },
   data() {
     return {
-      isActive: false,
+      isActive: true,
+      isActive2: true,
     };
   },
   methods: {
@@ -263,6 +299,16 @@ export default {
         this.isActive = !this.isActive;
       }
     },
+    menuToggle2(event) {
+      // `this` inside methods points to the current active instance
+      // console.log(event.fromElement.id);
+      // `event` is the native DOM event
+      if (event.type === "mouseenter") {
+        this.isActive2 = !this.isActive2;
+      } else if (event.type === "mouseleave") {
+        this.isActive2 = !this.isActive2;
+      }
+    },
   },
 };
 </script>
@@ -270,6 +316,7 @@ export default {
 <style scoped>
 .hidden_menu_width {
   width: 50vw;
+  z-index: 10;
 }
 
 .list-group-item {
@@ -296,5 +343,18 @@ a {
   max-height: 480px;
   width: auto;
   height: auto;
+}
+.btn_member {
+  border-radius: 5px;
+  background: #ffb100;
+  background: linear-gradient(0deg, #ffb100 0, #ffcb24 100%);
+  font-family: Causten Round Extra Bold Oblique !important;
+  color: #1f033e;
+}
+
+.btn_laika_member_cards {
+  padding: 5px;
+  border: 0;
+  font-size: 1.1rem;
 }
 </style>

@@ -188,4 +188,8 @@ export default {
 .foo-hover {
   color: red;
 }
+
+.border_purple {
+  border-color: #603e85 !important;
+}
 </style>
